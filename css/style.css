@@ -49,22 +49,20 @@ main .box .rat-sta .buttons {
   margin-bottom: 20px;
 }
 main .box .rat-sta .buttons .button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 2.7em;
   width: 2.7em;
   border-radius: 50%;
   background: var(--c-n-mg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
   transition: 0.2s;
+  cursor: pointer;
 }
 main .box .rat-sta .buttons .button:hover {
   color: var(--c-n-w);
   background: var(--c-n-lg);
-}
-main .box .rat-sta .buttons .button span {
-  display: block;
 }
 main .box .rat-sta a {
   background: var(--c-p-o);
@@ -120,7 +118,7 @@ p {
 
 .active {
   background: var(--c-p-o) !important;
-  color: #FFF;
+  color: #fff;
 }
 
 .attribution {

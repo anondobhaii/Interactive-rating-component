@@ -20,12 +20,11 @@
 }
 
 body {
-    position: relative;
+  position: relative;
   background: var(--c-n-vdb);
   width: 100%;
   max-height: 100vh;
   color: var(--c-n-lg);
-
 }
 
 main {
@@ -52,21 +51,19 @@ main {
         align-items: center;
         margin-bottom: 20px;
         .button {
+          position: relative;   
+          display: flex;
+          justify-content: center;
+          align-items: center;
           height: 2.7em;
           width: 2.7em;
           border-radius: 50%;
           background: var(--c-n-mg);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
           transition: 0.2s;
+          cursor: pointer;
           &:hover {
             color: var(--c-n-w);
             background: var(--c-n-lg);
-          }
-          span {
-            display: block;
           }
         }
       }
@@ -125,21 +122,21 @@ p {
 }
 .active {
   background: var(--c-p-o) !important;
-  color: #FFF;
+  color: #fff;
 }
 
-.attribution{
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -100;
-    color: #fff;
-    font-size: 12px;
-    width: 90%;
-    text-align: center;
-    a{
-        color: var(--c-p-o);
-        text-decoration: none;
-    } 
+.attribution {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -100;
+  color: #fff;
+  font-size: 12px;
+  width: 90%;
+  text-align: center;
+  a {
+    color: var(--c-p-o);
+    text-decoration: none;
+  }
 }
