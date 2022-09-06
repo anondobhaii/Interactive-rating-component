@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --c-p-o: hsl(25, 97%, 53%);
+  --c-n-w: hsl(0, 0%, 100%);
+  --c-n-lg: hsl(217, 12%, 63%);
+  --c-n-mg: #262f38;
+  --c-n-db: hsl(213, 26%, 14%);
+  --c-n-vdb: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  position: relative;
+  background: var(--c-n-vdb);
+  width: 100%;
+  max-height: 100vh;
+  color: var(--c-n-lg);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .box {
+  position: relative;
+  background: var(--c-n-db);
+  margin: 1.5rem;
+  border-radius: 20px;
+  max-width: 360px;
+}
+main .box .rat-sta img {
+  padding: 0.8rem;
+  background: var(--c-n-mg);
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+main .box .rat-sta .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .box .rat-sta .buttons .button {
+  height: 2.7em;
+  width: 2.7em;
+  border-radius: 50%;
+  background: var(--c-n-mg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main .box .rat-sta .buttons .button:hover {
+  color: var(--c-n-w);
+  background: var(--c-n-lg);
+}
+main .box .rat-sta .buttons .button span {
+  display: block;
+}
+main .box .rat-sta a {
+  background: var(--c-p-o);
+  display: block;
+  padding: 15px;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--c-n-w);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.2s;
+}
+main .box .rat-sta a:hover {
+  background: var(--c-n-w) !important;
+  color: var(--c-p-o);
+}
+main .thank {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .thank img {
+  margin-block: 20px;
+}
+main .thank .status {
+  color: var(--c-p-o);
+  background: var(--c-n-mg);
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+main .thank p {
+  text-align: center;
+}
+
+h2 {
+  color: var(--c-n-w);
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--c-n-lg);
+  font-size: 14px;
+  line-height: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.d-none {
+  display: none;
+}
+
+.active {
+  background: var(--c-p-o) !important;
+  color: #FFF;
+}
+
+.attribution {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -100;
+  color: #fff;
+  font-size: 12px;
+  width: 90%;
+  text-align: center;
+}
+.attribution a {
+  color: var(--c-p-o);
+  text-decoration: none;
+}
