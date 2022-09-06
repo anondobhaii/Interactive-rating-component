@@ -61,6 +61,7 @@ main {
           background: var(--c-n-mg);
           transition: 0.2s;
           cursor: pointer;
+          -webkit-tap-highlight-color: transparent;
           &:hover {
             color: var(--c-n-w);
             background: var(--c-n-lg);

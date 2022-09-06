@@ -59,6 +59,7 @@ main .box .rat-sta .buttons .button {
   background: var(--c-n-mg);
   transition: 0.2s;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 main .box .rat-sta .buttons .button:hover {
   color: var(--c-n-w);
